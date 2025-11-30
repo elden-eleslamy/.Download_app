@@ -3,8 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>مكتبة الدين الإسلامي الإكترونية </title>
+  <title>مكتبة الدين الإسلامي الإكترونية</title>
+
+  <!-- خطوط جوجل -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
      :root{
       --primary: #003A70;
@@ -38,12 +44,14 @@
 
     .empty{background:#fff;padding:24px;border-radius:12px;border:1px solid #eef3f9;text-align:center;color:var(--muted)}
     footer{padding:20px;text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
-  .social-box{
+
+    /* Social Icons */
+    .social-box{
       display:flex;
       gap:14px;
       flex-wrap:wrap;
       justify-content:center;
-      margin-top:10px;
+      margin-top:20px;
     }
     .social-box a{
       width:55px;
@@ -65,7 +73,8 @@
       color:#fff;
       box-shadow:0 10px 22px rgba(0,0,0,0.15);
     }
-</style>
+
+  </style>
 </head>
 <body>
 
@@ -96,10 +105,10 @@
       لم يتم العثور على ملفات تطابق معايير البحث.
     </div>
 
-    <!-- روابط تهمك (التصميم الجديد بدون أيقونات) -->
+    <!-- روابط تهمك -->
     <div style="margin-top:40px;">
       <div class="section-title">روابط تهمك</div>
-<br>
+      <br>
       <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
 
         <div class="card" style="padding:25px; border-top:4px solid var(--primary); text-align:center;">
@@ -111,62 +120,29 @@
         <div class="card" style="padding:25px; border-top:4px solid var(--secondary); text-align:center;">
           <div class="title" style="font-size:18px;">منصة الفيديوهات الإسلامية</div>
           <div class="meta" style="margin-bottom:15px;">مشاهدة بدون إعلانات</div>
-          <a class="btn open" href="404" target="_blank" style="width:100%;">الدخول للرابط</a>
+          <a class="btn open" href="#" target="_blank" style="width:100%;">الدخول للرابط</a>
         </div>
 
         <div class="card" style="padding:25px; border-top:4px solid var(--accent); text-align:center;">
           <div class="title" style="font-size:18px;">منصة المسابقات الإسلامية</div>
           <div class="meta" style="margin-bottom:15px;">مسابقات يومية</div>
-          <a class="btn open" href="404" target="_blank" style="width:100%;">الدخول للرابط</a>
+          <a class="btn open" href="#" target="_blank" style="width:100%;">الدخول للرابط</a>
         </div>
 
       </div>
     </div>
-<br>
-<div class="social-box">
 
-    <!-- فيسبوك -->
-    <a href="#" title="فيسبوك">
-     <i class="fa-brands fa-facebook"></i>
-    </a>
-
-    <!-- إنستجرام -->
-    <a href="#" title="إنستجرام">
-      <i class="fa-brands fa-facebook-f"></i>
-    </a>
-
-    <!-- واتساب -->
-    <a href="#" title="واتساب">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- تليجرام -->
-    <a href="#" title="تليجرام">
-      <i class="fab fa-telegram-plane"></i>
-    </a>
-
-    <!-- يوتيوب -->
-    <a href="#" title="يوتيوب">
-      <i class="fab fa-youtube"></i>
-    </a>
-
-    <!-- تيك توك -->
-    <a href="#" title="تيك توك">
-      <i class="fab fa-tiktok"></i>
-    </a>
-
-    <!-- X (Twitter سابقًا) -->
-    <a href="#" title="منصة X">
-      <i class="fab fa-x-twitter"></i>
-    </a>
-
-    <!-- Threads -->
-    <a href="#" title="ثريدس">
-      <i class="fab fa-threads"></i>
-    </a>
-
-  </div>
-</div>
+    <!-- أيقونات السوشيال -->
+    <div class="social-box">
+      <a href="https://www.facebook.com/share/AtpYGBbKjJsdCbSz/?mibextid=WUal2a" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/elden_eleslamy" title="إنستجرام"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.whatsapp.com/channel/0029VaeLbB39Gv7Y308tqC0F"واتساب"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.t.me/eldeneleslamy" title="تليجرام"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://www.youtube.com/@eldeneleslamy" title="يوتيوب"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@elden_eleslamy" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.x.com/elden_eleslamy" title="X / تويتر"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.threads.com/@elden_eleslamy" title="ثريدس"><i class="fas fa-circle"></i></a>
+    </div>
 
     <footer>© الدين الإسلامي</footer>
   </main>
@@ -204,41 +180,21 @@
       });
     }
 
-// منع كليك يمين
-document.addEventListener("contextmenu", e => e.preventDefault());
+    // منع كليك يمين ونسخ
+    document.addEventListener("contextmenu", e => e.preventDefault());
+    document.addEventListener("copy", e => e.preventDefault());
+    document.addEventListener("cut", e => e.preventDefault());
+    document.addEventListener("selectstart", e => e.preventDefault());
 
-// منع النسخ والقص
-document.addEventListener("copy", e => e.preventDefault());
-document.addEventListener("cut", e => e.preventDefault());
-
-// منع تحديد النص
-document.addEventListener("selectstart", e => e.preventDefault());
-
-// منع الاختصارات
-document.onkeydown = function(e) {
-    // Ctrl + U (عرض الكود)
-    if(e.ctrlKey && e.key === "u") return false;
-
-    // F12
-    if(e.key === "F12") return false;
-
-    // Ctrl + Shift + I (Inspect)
-    if(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") return false;
-
-    // Ctrl + Shift + J
-    if(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") return false;
-
-    // Ctrl + C
-    if(e.ctrlKey && e.key.toLowerCase() === "c") return false;
-
-    // Ctrl + S
-    if(e.ctrlKey && e.key.toLowerCase() === "s") return false;
-
-    // Ctrl + A
-    if(e.ctrlKey && e.key.toLowerCase() === "a") return false;
-};
-
-
+    document.onkeydown = function(e) {
+        if(e.ctrlKey && e.key === "u") return false;
+        if(e.key === "F12") return false;
+        if(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") return false;
+        if(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") return false;
+        if(e.ctrlKey && e.key.toLowerCase() === "c") return false;
+        if(e.ctrlKey && e.key.toLowerCase() === "s") return false;
+        if(e.ctrlKey && e.key.toLowerCase() === "a") return false;
+    };
 
     onFilterChange();
   </script>
